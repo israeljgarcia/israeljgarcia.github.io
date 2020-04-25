@@ -3,9 +3,33 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width: device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
         <title>WDD230 Portal</title>
     </head>
     <body>
-        <h1>Israel Garcia</h1>
+        <header>
+            <h1>Israel Garcia</h1>
+        </header>
+        <main>
+            <h2>WDD230 Assignment Portal</h2>
+
+            <img src="/images/rsz-my-portrait.jpg" alt="portrait picture">
+
+            <ul>
+                <li>Lesson 02: <a href="#" class="portal-link">Assignment Link</a><p>This is a description</p></li>
+ 
+                <li>Lesson 03: <a href="#" class="portal-link">Assignment Link</a><p>This is a description</p></li>
+               
+                <li class="dual-link">Lesson 04-1: <a href="#" class="portal-link">Assignment Link </a><p>This is a description</p></li>  
+                
+                <li>Lesson 04-2: <a href="#" class="portal-link">Assignment Link</a><p>This is a description</p></li>
+            </ul>
+        </main>
+        <footer>
+            <p id="footer-info">&copy 2020 | Israel Garcia | Arizona | <a href="#">BYUI Online Learning</a></p>
+        </footer>
     </body>
+    <script>
+        document.getElementById("footer-info").innerHTML += " | Last Updated " + document.lastModified.split(" ")[0];
+    </script>
 </html>
