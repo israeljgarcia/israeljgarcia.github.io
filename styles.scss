@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+$main-color: #f4f4f4; 
+$secondary-color: #8ec6c5;
+$accent-color: #6983aa;
+$main-font: 'Roboto Mono', monospace, Arial;
+
+body {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 20px;
+  border-radius: 10px;
+
+  h1 {
+    font-family: $main-font;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 80px;
+  }
+}
+
+main {
+
+  h2 {
+    font-family: $main-font;
+    text-indent: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    width: 130px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right: 20.5%;
+    top: 2%;
+    border-radius: 0 10% 0 0;
+    box-shadow: -2px 2px 5px 3px rgba(51, 51, 51, 0.5);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: $main-font;
+    padding: 20px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      text-indent: 10px;
+      flex: 1 0 30%;
+
+      a {
+        display: block;
+        background-color: $main-color;
+        text-align: center;
+        padding: 100px 50px;
+        margin: 10px;
+        margin-bottom: 0px;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      p {
+        background-color: $accent-color;
+        color: white;
+        text-indent: -10px;
+        font-size: 12px;
+        padding: 20px;
+        margin: 10px;
+        margin-top: 0px;
+        border: 1px solid black;
+        border-radius: 0px 0px 10px 10px;
+        border-top: none;
+
+      }
+    }
+
+  }
+
+}
+
+footer {
+  background-color: $secondary-color;
+  font-family: $main-font;
+  padding: 20px;
+  border-radius: 10px;
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: black
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+}
