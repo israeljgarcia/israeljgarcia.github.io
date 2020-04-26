@@ -79,3 +79,20 @@ footer {
       color: black; }
     footer p a:hover {
       color: white; }
+
+@media (max-width: 800px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%; }
+  header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 10vw; }
+  main h2 {
+    text-align: center; }
+  main img {
+    position: initial;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0; } }
