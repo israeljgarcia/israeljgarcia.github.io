@@ -1,6 +1,6 @@
 {
 	"version": "2.0.0",
-	"tasks": [ 
+	"tasks": [
         {
             "type": "gulp",
             "task": "sass",
@@ -10,6 +10,12 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "gulp",
+            "task": "default",
+            "problemMatcher": [],
+            "label": "gulp: default"
         }
     ]
 }
