@@ -216,8 +216,7 @@ footer p {
     margin-left: 10px;
   }
   .design-item-description1 {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 100%;
@@ -237,8 +236,7 @@ footer p {
     display: none;
   }
   .design-item-description2 {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 100%;
@@ -258,8 +256,7 @@ footer p {
     display: none;
   }
   .design-item-description3 {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 100%;
@@ -299,8 +296,7 @@ footer p {
     width: auto;
   }
   .design-item-description1 {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
     -ms-grid-rows: 80%;
@@ -323,8 +319,7 @@ footer p {
     display: none;
   }
   .design-item-description2 {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
     -ms-grid-rows: 80%;
@@ -347,8 +342,7 @@ footer p {
     display: none;
   }
   .design-item-description3 {
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
     -ms-grid-rows: 80%;
