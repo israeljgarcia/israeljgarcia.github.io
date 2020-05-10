@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
+
+body {
+    background-color: rgb(165, 165, 165);
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.secondary-font {
+    font-family: 'Bitter', 'Times New Roman', Times, serif;
+}
+
+.main-color {
+    display: block;
+    background-color: #f9f7f7;
+    width: 30px;
+    height: 30px;
+}
+
+.secondary-color {
+    display: block;
+    background-color: #dbe2ef;
+    width: 30px;
+    height: 30px;
+}
+
+.accent-color1 {
+    display: block;
+    background-color: #3f72af;
+    width: 30px;
+    height: 30px;
+}
+
+.accent-color2 {
+    display: block;
+    background-color: #112d4e;
+    width: 30px;
+    height: 30px;
+}

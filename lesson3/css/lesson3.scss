@@ -1,0 +1,169 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
+
+//Colors
+$main-color: #f9f7f7;
+$secondary-color: #dbe2ef;
+$light-accent: #3f72af;
+$dark-accent: #112d4e;
+
+//Fonts
+$main-font: 'Montserrat', Arial, sans-serif;
+$secondary-font: 'Bitter', 'Times New Roman', Times, serif;
+
+body {
+    background-color: $main-color;
+    font-family: $main-font;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    background-color: $secondary-color;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+
+    img {
+        display: inline-block;
+        padding: 1vh;
+        height: 8vh;
+        width: auto;
+    }
+
+    h1 {
+        font-family: $secondary-font; 
+        text-align: center;
+        font-size: 4vh;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    margin: 0 auto;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: auto;
+        margin: 0;
+        padding: 0;
+        background-color: $light-accent;
+
+        li {
+            width: 25%;
+            a {
+                font-size: 2vh;
+                text-decoration: none;
+                font-weight: 700;
+                color: white;
+                display: block;
+                padding: 2vh;
+                margin: 0;
+                text-align: center;
+            }
+
+            a:hover {
+                background-color: $dark-accent;
+            }
+        }
+    }
+}
+
+main {
+    margin: 2%;
+    padding-bottom: 2.5rem;
+
+    h2 {
+        font-family: $secondary-font;
+        font-size: 4vh;
+        color: $dark-accent;
+    }
+
+    p {
+        font-size: 2.5vh;
+        padding-bottom: 5vh;
+    }
+
+    img {
+        max-width: 10vw;
+        height: auto;
+    }
+
+    table {
+        text-align: left;
+        border: 1px solid black;
+        font-size: 2.5vh; 
+        tr {
+            border: 1px solid black;
+    
+            th {
+                border: 1px solid black;
+                padding: 5px; 
+            }
+
+            .top-table-row {
+                color: white;
+                background-color: $dark-accent;
+            }
+
+            #off-white {
+                background-color: $main-color;
+            }
+
+            #secondary-color {
+                background-color: $secondary-color;
+            }
+
+            #accent-color-1 {
+                background-color: $light-accent;
+            }
+
+            #accent-color-2 {
+                background-color: $dark-accent;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    background-color: $secondary-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    nav {
+        ul {
+            flex-direction: column;
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    main {
+        margin-top: 20vh;
+    }
+
+    footer {
+        p {
+            font-size: .7rem;
+        }
+    }
+    
+}
