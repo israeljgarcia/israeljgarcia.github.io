@@ -74,12 +74,22 @@ main ul li a {
   display: block;
   background-color: #f4f4f4;
   text-align: center;
-  padding: 100px 50px;
+  padding: 0;
   margin: 10px;
   margin-bottom: 0px;
   text-decoration: none;
   border: 1px solid black;
   border-radius: 10px 10px 0px 0px;
+}
+
+main ul li a img {
+  position: static;
+  padding: 1px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main ul li p {
