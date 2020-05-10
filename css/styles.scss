@@ -64,21 +64,12 @@ main {
         display: block;
         background-color: $main-color;
         text-align: center;
-        padding: 0;
+        padding: 50px;
         margin: 10px;
         margin-bottom: 0px;
         text-decoration: none;
         border: 1px solid black;
         border-radius: 10px 10px 0px 0px;
-
-        img {
-          position: static;
-          padding: 1px;
-          border-radius: 10px;
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
       }
 
       p {
