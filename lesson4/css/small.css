@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #dbe2ef;
+  width: 100%;
+  height: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  display: inline-block;
+  padding: 1vh;
+  height: 8vh;
+  width: auto;
+}
+
+header h1 {
+  font-family: "Bitter", "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 4vh;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+nav .navigation-menu {
+  list-style: none;
+  padding: 0;
+}
+
+nav .navigation-menu li {
+  display: none;
+}
+
+nav .navigation-menu li:first-child {
+  display: block;
+}
+
+nav .navigation-menu li a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+nav .responsive li {
+  display: block;
+}
+
+.navigation-menu a:hover {
+  background-color: #112d4e;
+  color: white;
+}
+
 main {
   text-align: center;
 }
