@@ -1,0 +1,29 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
+
+//Colors
+$main-color: #f9f7f7;
+$secondary-color: #dbe2ef;
+$light-accent: #3f72af;
+$dark-accent: #112d4e;
+
+//Fonts
+$main-font: 'Montserrat', Arial, sans-serif;
+$secondary-font: 'Bitter', 'Times New Roman', Times, serif;
+
+main {
+    text-align: center;
+    h1 {
+        padding: 10px;
+    }
+
+    .placeholder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 5px;
+        background-color: $secondary-color;
+    }
+}
