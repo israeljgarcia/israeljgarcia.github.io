@@ -1,0 +1,9 @@
+@media (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+  footer {
+    max-width: 1024px;
+  }
+}
+/*# sourceMappingURL=large.css.map */

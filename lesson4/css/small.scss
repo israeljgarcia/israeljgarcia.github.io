@@ -11,12 +11,14 @@ $dark-accent: #112d4e;
 $main-font: 'Montserrat', Arial, sans-serif;
 $secondary-font: 'Bitter', 'Times New Roman', Times, serif;
 
+
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
     background-color: $secondary-color;
-    width: 100%;
+    max-width: 100%;
     height: 10%;
     justify-content: center;
 
@@ -41,6 +43,7 @@ nav {
     .navigation-menu {
         list-style: none;
         padding: 0;
+        margin: 0;
 
         li {
             display: none;
@@ -77,6 +80,10 @@ nav {
 
 main {
     text-align: center;
+    padding-bottom: 2.5rem;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
     h1 {
         padding: 10px;
     }
@@ -86,8 +93,16 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        margin: 5px;
+        padding: 10px 0;
+        margin: 5px 0;
         background-color: $secondary-color;
     }
+}
+
+footer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    background-color: $secondary-color;
 }

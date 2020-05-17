@@ -1,0 +1,21 @@
+@media (min-width: 32.5em) {
+    nav {
+        .navigation-menu {
+            display: flex;
+        }
+
+        .navigation-menu li {
+            display: block;
+            flex: 1 1 auto;
+        }
+
+        .navigation-menu li:first-child {
+            display: none;
+        }
+
+    }
+
+    main {max-width: 800px;}
+
+    footer {max-width: 800px;}
+}
