@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
+#banner {
+  background-color: #FCA874;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Bitter", "Times New Roman", Times, serif;
+  text-align: center;
+  display: none;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -101,8 +111,27 @@ main .placeholder {
   background-color: #dbe2ef;
 }
 
+main .hero-container img {
+  width: 100%;
+}
+
 main .preston-weather {
   display: none;
+}
+
+main .preston-article {
+  background-color: #dbe2ef;
+  padding: 10px;
+  text-align: left;
+}
+
+main .preston-article h2 {
+  margin: 0;
+  padding: 0;
+}
+
+main .preston-article p {
+  font-size: 1.2rem;
 }
 
 footer {

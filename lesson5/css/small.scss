@@ -12,6 +12,16 @@ $dark-accent: #112d4e;
 $main-font: 'Montserrat', Arial, sans-serif;
 $secondary-font: 'Bitter', 'Times New Roman', Times, serif;
 
+#banner {
+    background-color: $bright-accent-color;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: $secondary-font;
+    text-align: center;
+    display: none;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -102,8 +112,29 @@ main {
         background-color: $secondary-color;
     }
 
+    .hero-container {
+        img {
+            width: 100%;
+        }
+    }
+
     .preston-weather {
         display: none; 
+    }
+
+    .preston-article {
+        background-color: $secondary-color;
+        padding: 10px;
+        text-align: left;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
     }
 }
 
