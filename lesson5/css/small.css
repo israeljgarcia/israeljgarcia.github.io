@@ -111,8 +111,34 @@ main .placeholder {
   background-color: #dbe2ef;
 }
 
+main .hero-container {
+  position: relative;
+}
+
 main .hero-container img {
   width: 100%;
+}
+
+main .hero-container .hero-summary {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #dbe2ef;
+  padding: 5px 15px;
+  border: 4px solid #112d4e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #f9f7f7;
+          box-shadow: 0 0 15px #f9f7f7;
+}
+
+main .hero-container .hero-summary p {
+  margin: 10px 0;
+  text-align: left;
+}
+
+main .hero-container .hero-summary .hero-summary-title {
+  font-weight: 900;
+  text-align: center;
 }
 
 main .preston-weather {

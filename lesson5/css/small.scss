@@ -113,8 +113,31 @@ main {
     }
 
     .hero-container {
+        position: relative;
+
         img {
             width: 100%;
+        }
+
+        .hero-summary {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: $secondary-color;
+            padding: 5px 15px;
+            border: 4px solid $dark-accent;
+            border-radius: 5px;
+            box-shadow: 0 0 15px $main-color;
+
+            p {
+                margin: 10px 0;
+                text-align: left;
+            }
+
+            .hero-summary-title {
+                font-weight: 900;
+                text-align: center;
+            }
         }
     }
 
