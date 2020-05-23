@@ -65,17 +65,18 @@ nav .navigation-menu li a {
   font-weight: 700;
 }
 
-nav .responsive li {
-  display: block;
-}
-
-.navigation-menu a:hover {
+nav .navigation-menu li .active {
   background-color: #112d4e;
   color: white;
 }
 
-.active {
+nav .navigation-menu li a:hover {
   background-color: #FCA874;
+  color: white;
+}
+
+nav .responsive li {
+  display: block;
 }
 
 main {
@@ -86,29 +87,14 @@ main {
   margin: 0 auto;
 }
 
+main section {
+  margin: 20px;
+}
+
 main h2 {
   font-size: 2rem;
   padding: 10px;
-  color: #FCA874;
-}
-
-main .placeholder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0;
-  margin: 5px 0;
-  background-color: #dbe2ef;
+  color: #112d4e;
 }
 
 main .hero-container {
@@ -124,7 +110,7 @@ main .hero-container .hero-summary {
   top: 10px;
   left: 10px;
   background-color: #dbe2ef;
-  padding: 5px 15px;
+  padding: 5px 10px;
   border: 4px solid #112d4e;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 15px #f9f7f7;
@@ -132,13 +118,16 @@ main .hero-container .hero-summary {
 }
 
 main .hero-container .hero-summary p {
-  margin: 10px 0;
+  margin: 5px 0;
   text-align: left;
 }
 
 main .hero-container .hero-summary .hero-summary-title {
   font-weight: 900;
+  font-size: 1.3rem;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 main .preston-weather {
@@ -158,6 +147,47 @@ main .preston-article h2 {
 
 main .preston-article p {
   font-size: 1.2rem;
+}
+
+main .preston-article #light-festival {
+  width: 50%;
+  float: right;
+  padding: 2px;
+}
+
+main .preston-contact {
+  background-color: #dbe2ef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .preston-contact #preston-map {
+  width: 40%;
+}
+
+main .preston-contact div {
+  background-color: #f9f7f7;
+  width: 100%;
+  border: 4px solid #112d4e;
+}
+
+main .preston-contact h2 {
+  font-size: 1.2rem;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+main .preston-contact p {
+  font-size: .9rem;
+  margin: 5px;
+  text-align: left;
+}
+
+main .preston-contact .spacer {
+  margin-bottom: 13px;
 }
 
 footer {

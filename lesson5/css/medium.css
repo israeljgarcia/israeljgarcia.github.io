@@ -16,6 +16,49 @@
   main {
     max-width: 800px;
   }
+  main .hero-container .hero-summary {
+    padding: 10px 40px;
+  }
+  main .hero-container .hero-summary p {
+    font-size: 1.2rem;
+  }
+  main .hero-container .hero-summary .hero-summary-title {
+    font-size: 1.5rem;
+  }
+  main .preston-weather {
+    display: block;
+  }
+  main .preston-weather h3 {
+    margin: 0;
+    height: 40px;
+  }
+  main .preston-weather .days-of-week {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    -ms-grid-rows: 20px 150px;
+        grid-template-rows: 20px 150px;
+    background-color: #dbe2ef;
+    padding: 15px;
+  }
+  main .preston-weather .days-of-week .preston-temperature p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  main .preston-weather .days-of-week .preston-temperature img {
+    width: 90%;
+  }
+  main .preston-contact div {
+    margin: 0 auto;
+  }
+  main .preston-contact div h2 {
+    font-size: 1.8rem;
+  }
+  main .preston-contact div p {
+    font-size: 1.5rem;
+  }
   footer {
     max-width: 800px;
   }

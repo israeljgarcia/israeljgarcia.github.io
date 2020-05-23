@@ -73,6 +73,17 @@ nav {
                 color: black;
 	            font-weight: 700;
             }
+
+            .active {
+                background-color: $dark-accent;
+                color: white;
+            }    
+
+            a:hover {
+                background-color: $bright-accent-color;
+                color: white;
+            }
+            
         }
     }
 
@@ -81,35 +92,21 @@ nav {
     }
 }
 
-.navigation-menu a:hover {
-    background-color: $dark-accent;
-    color: white;
-}
-
-.active {
-    background-color: $bright-accent-color;
-}    
-
 main {
     text-align: center;
     padding-bottom: 2.5rem;
     max-width: 600px;
     display: block;
     margin: 0 auto;
+
+    section{
+        margin: 20px;
+    }
+
     h2 {
         font-size: 2rem;
         padding: 10px;
-        color: $bright-accent-color;
-    }
-
-    .placeholder {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
-        margin: 5px 0;
-        background-color: $secondary-color;
+        color: $dark-accent;
     }
 
     .hero-container {
@@ -124,19 +121,22 @@ main {
             top: 10px;
             left: 10px;
             background-color: $secondary-color;
-            padding: 5px 15px;
+            padding: 5px 10px;
             border: 4px solid $dark-accent;
             border-radius: 5px;
             box-shadow: 0 0 15px $main-color;
 
             p {
-                margin: 10px 0;
+                margin: 5px 0;
                 text-align: left;
             }
 
             .hero-summary-title {
                 font-weight: 900;
+                font-size: 1.3rem;
                 text-align: center;
+                margin: 0;
+                padding: 0;
             }
         }
     }
@@ -157,6 +157,44 @@ main {
 
         p {
             font-size: 1.2rem;
+        }
+
+        #light-festival {
+            width: 50%;
+            float: right;
+            padding: 2px;
+        }
+    }
+
+    .preston-contact {
+        background-color: $secondary-color;
+        display: flex;
+        #preston-map{
+            width: 40%;
+        }
+
+        div {
+            background-color: $main-color;
+            width: 100%;
+            border: 4px solid $dark-accent;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 3px;
+            text-align: left;
+        }
+
+        p{
+            font-size: .9rem;
+            margin: 5px;
+            text-align: left;
+        }
+
+        .spacer {
+            margin-bottom: 13px;
         }
     }
 }
