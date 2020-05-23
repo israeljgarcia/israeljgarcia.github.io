@@ -1,87 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+  </head>
+  <body>
+    <div id="banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
     <header>
-        <img src="/lesson3/images/weather-icon.png" alt="site logo">
-        <h1>Get Easy Climate</h1>
+      <img src="/lesson3/images/weather-icon.png" alt="site logo" />
+      <h1>Get Easy Climate</h1>
     </header>
 
     <nav>
-        <ul class="navigation-menu">
-            <li><a class="menu-label" href="#">&#9776; Menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a class="active" href="/lesson4/preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
+      <ul class="navigation-menu">
+        <li><a class="menu-label" href="#">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="/lesson4/preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
     </nav>
     <script src="./js/responsive-navbar.js"></script>
 
     <main>
-        <h2>Preston Idaho</h2>
+      <h2>Preston Idaho</h2>
 
-        <section class="hero-container">
-            <img id="hero-image" src="./images/hero-image.jpg" alt="landscape image of idaho hills and snowy mountains in background">
-            <p class="placeholder">Hero With Weather Summary</p>
-        </section>
-        
-        <section  class="preston-weather">
-            <div class="days-of-week">
-                <h3>Mon</h3>
-                <h3>Tues</h3>
-                <h3>Wed</h3>
-                <h3>Thurs</h3>
-                <h3>Fri</h3>
-            </div>
+      <section class="hero-container">
+        <img
+          id="hero-image"
+          src="./images/hero-image.jpg"
+          alt="landscape image of idaho hills and snowy mountains in background"
+        />
 
-                <div class="preston-temperature">
-                    <img src="./images/sunny.png" alt="sunny icon">
-                    <p>70</p>
-                </div>
+        <div class="hero-summary">
+            <p >Weather Summary</p>
+            <p>Current: </p>
+            <p>Today's High: </p>
+            <p>Humidity: </p>
+            <p>Wind Speed: </p>
+        </div>
+      </section>
 
-                <div class="preston-temperature">
-                    <img src="./images/storm.png" alt="storm icon">
-                    <p>68</p>
-                </div>
+      <section class="preston-weather">
+        <div class="days-of-week">
+          <h3>Mon</h3>
+          <h3>Tues</h3>
+          <h3>Wed</h3>
+          <h3>Thurs</h3>
+          <h3>Fri</h3>
+        </div>
 
-                <div class="preston-temperature">
-                    <img src="./images/snow.png" alt="snow icon">
-                    <p>74</p>
-                </div>
+        <div class="preston-temperature">
+          <img src="./images/sunny.png" alt="sunny icon" />
+          <p>70</p>
+        </div>
 
-                <div class="preston-temperature">
-                    <img src="./images/rain.png" alt="rain icon">
-                    <p>62</p>
-                </div>
+        <div class="preston-temperature">
+          <img src="./images/storm.png" alt="storm icon" />
+          <p>68</p>
+        </div>
 
-                <div class="preston-temperature">
-                    <img src="./images/partly-cloudy.png" alt="clouds icon">
-                    <p>66</p>
-                </div>
-        </section>
+        <div class="preston-temperature">
+          <img src="./images/snow.png" alt="snow icon" />
+          <p>74</p>
+        </div>
 
-        <section>
-            <div class="placeholder">Article</div>
-        </section>
+        <div class="preston-temperature">
+          <img src="./images/rain.png" alt="rain icon" />
+          <p>62</p>
+        </div>
 
-        <section>
-            <div class="placeholder">Contact Information</div>
-        </section>
+        <div class="preston-temperature">
+          <img src="./images/partly-cloudy.png" alt="clouds icon" />
+          <p>66</p>
+        </div>
+      </section>
+
+      <section class="preston-article">
+        <h2>Article</h2>
+        <h3>By Izzy</h3>
+        <p class="article">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+          eius culpa iste, incidunt reiciendis fugit, ullam amet placeat
+          quisquam accusamus natus obcaecati, iure sit. Laboriosam libero
+          excepturi aliquam sed Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Distinctio eius culpa iste, incidunt reiciendis
+          fugit, ullam amet placeat quisquam accusamus natus obcaecati, iure
+          sit. Laboriosam libero excepturi aliquam sedLorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Distinctio eius culpa iste,
+          incidunt reiciendis fugit, ullam amet placeat quisquam accusamus natus
+          obcaecati, iure sit. Laboriosam libero excepturi aliquam sed
+        </p>
+      </section>
+
+      <section>
+        <div class="placeholder">Contact Information</div>
+      </section>
     </main>
 
     <footer>
-        <p id="footer-info">&copy; <span id="year"></span> | Israel Garcia | Arizona | <a href="https://www.byui.edu/">BYUI Online Learning</a></p>
+      <p id="footer-info">
+        &copy; <span id="year"></span> | Israel Garcia | Arizona |
+        <a href="https://www.byui.edu/">BYUI Online Learning</a>
+      </p>
     </footer>
     <script src="/index.js"></script>
-</body>
+    <script src="./js/banner.js"></script>
+  </body>
 </html>
