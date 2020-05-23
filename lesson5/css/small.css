@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #dbe2ef;
+  max-width: 100%;
+  height: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  display: inline-block;
+  padding: 1vh;
+  height: 8vh;
+  width: auto;
+}
+
+header h1 {
+  font-family: "Bitter", "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 4vh;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+nav .navigation-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .navigation-menu li {
+  display: none;
+}
+
+nav .navigation-menu li:first-child {
+  display: block;
+}
+
+nav .navigation-menu li a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+nav .responsive li {
+  display: block;
+}
+
+.navigation-menu a:hover {
+  background-color: #112d4e;
+  color: white;
+}
+
+.active {
+  background-color: #FCA874;
+}
+
+main {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 2rem;
+  padding: 10px;
+  color: #FCA874;
+}
+
+main .placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  margin: 5px 0;
+  background-color: #dbe2ef;
+}
+
+main .preston-weather {
+  display: none;
+}
+
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #dbe2ef;
+}
+/*# sourceMappingURL=small.css.map */
