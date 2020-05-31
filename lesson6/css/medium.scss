@@ -1,0 +1,90 @@
+$main-color: #f9f7f7;
+$secondary-color: #dbe2ef;
+$bright-accent-color: #FCA874;
+$light-accent: #3f72af;
+$dark-accent: #112d4e;
+
+@media (min-width: 32.5em) {
+    nav {
+        .navigation-menu {
+            display: flex;
+        }
+
+        .navigation-menu li {
+            display: block;
+            flex: 1 1 auto;
+        }
+
+        .navigation-menu li:first-child {
+            display: none;
+        }
+
+    }
+
+    main {
+        max-width: 800px;
+
+        .hero-container {
+            .hero-summary {
+                position: absolute;
+                top: 33vh;
+                left: 110px;
+                width: 160px;
+                height: 190px;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .hero-summary-title {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .preston-weather {
+            display: block;
+            
+            h3{
+                margin: 0;
+                height: 40px;
+            }
+
+            .days-of-week{
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                grid-template-rows: 20px 150px;
+                background-color: $secondary-color;
+                padding: 15px;
+
+                .preston-temperature {
+                    p {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin: 0;
+                    }   
+
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        .preston-contact {
+            div {
+                margin: 0 auto;
+
+                h2 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    footer {max-width: 800px;}
+}

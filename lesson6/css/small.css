@@ -13,8 +13,8 @@
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   background-color: #dbe2ef;
@@ -28,14 +28,21 @@ header {
 header img {
   display: inline-block;
   padding: 1vh;
-  height: 8vh;
+  height: 10vh;
   width: auto;
+  margin: auto 0 auto auto;
 }
 
 header h1 {
   font-family: "Bitter", "Times New Roman", Times, serif;
   text-align: center;
   font-size: 4vh;
+}
+
+header p {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 nav {
@@ -101,17 +108,16 @@ main h2 {
 }
 
 main .hero-container {
-  position: relative;
-}
-
-main .hero-container img {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .hero-container .hero-summary {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   background-color: #dbe2ef;
   padding: 5px 10px;
   border: 4px solid #112d4e;
@@ -122,7 +128,7 @@ main .hero-container .hero-summary {
 
 main .hero-container .hero-summary p {
   margin: 5px 0;
-  text-align: left;
+  text-align: center;
 }
 
 main .hero-container .hero-summary .hero-summary-title {
@@ -131,6 +137,10 @@ main .hero-container .hero-summary .hero-summary-title {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+main .hero-container .hero-summary picture {
+  width: 100%;
 }
 
 main .preston-weather {
