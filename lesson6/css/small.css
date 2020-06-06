@@ -211,6 +211,47 @@ main .preston-contact .spacer {
   margin-bottom: 13px;
 }
 
+main .gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .gallery-container div {
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+  margin-bottom: 10px;
+}
+
+main .gallery-container div p {
+  margin: 10px;
+  text-align: center;
+}
+
+main .gallery-container picture {
+  width: 100%;
+  padding: 0;
+}
+
+main .gallery-container picture img[data-src] {
+  -webkit-filter: blur(0.2em);
+          filter: blur(0.2em);
+}
+
+main .gallery-container picture img {
+  -webkit-filter: blur(0em);
+          filter: blur(0em);
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+  width: 100%;
+}
+
 footer {
   max-width: 600px;
   margin: 0 auto;

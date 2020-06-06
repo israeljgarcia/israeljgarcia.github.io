@@ -78,6 +78,17 @@ $dark-accent: #112d4e;
                 }
             }
         }
+
+        .gallery-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            div {
+                margin: 5px;
+            }
+        }
     }
 
     footer {max-width: 800px;}

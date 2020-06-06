@@ -50,6 +50,17 @@ $dark-accent: #112d4e;
                 margin-left: 2px;
             }
         }
+
+        .gallery-container {
+
+            div {
+                margin: 10px;
+            }
+
+            div:hover {
+                box-shadow: 0 8px 12px grey;
+            }
+        }
     }
     footer {max-width: 1024px;}
 }

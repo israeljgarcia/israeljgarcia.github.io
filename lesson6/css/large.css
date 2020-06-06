@@ -33,6 +33,13 @@
     float: right;
     margin-left: 2px;
   }
+  main .gallery-container div {
+    margin: 10px;
+  }
+  main .gallery-container div:hover {
+    -webkit-box-shadow: 0 8px 12px grey;
+            box-shadow: 0 8px 12px grey;
+  }
   footer {
     max-width: 1024px;
   }

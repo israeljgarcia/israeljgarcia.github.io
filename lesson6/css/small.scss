@@ -213,7 +213,36 @@ main {
             margin-bottom: 13px;
         }
     }
+
+    .gallery-container {
+        display: flex;
+        flex-direction: column; 
+
+        div {
+            box-shadow: 0px 0px 5px grey;
+            margin-bottom: 10px;
+            p {
+                margin: 10px;
+                text-align: center;
+            }
+        }
+
+        picture {
+            width: 100%;
+            padding: 0;
+            img[data-src] {
+                filter: blur(0.2em);
+            }
+
+            img {
+                filter: blur(0em);
+                transition: filter 0.5s;
+                width: 100%;
+            }
+        }
+    }
 }
+
 
 footer {
     max-width: 600px;
