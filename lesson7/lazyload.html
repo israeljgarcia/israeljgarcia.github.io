@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a lazy loading example page">
+    <link rel="stylesheet" href="lazyload.css">
     <title>Lazy Load</title>
 </head>
 <body>
     <h1>Lazy Loading Images</h1>
-    <picture><img  src="" alt=""></picture>
-    <picture><img src="" alt=""></picture>
-    <picture><img src="" alt=""></picture>
-    <picture><img src="" alt=""></picture>
-    <picture><img src="" alt=""></picture>
+    <picture><img src="./media/image-placeholder.jpg" data-src="./media/rain-city-300x400.jpg" alt=""></picture>
+    <picture><img src="./media/image-placeholder.jpg" data-src="./media/crosswalk-300x400.jpg" alt=""></picture>
+    <picture><img src="./media/image-placeholder.jpg" data-src="./media/snowy-mountains-300x400.jpg" alt=""></picture>
+    <picture><img src="./media/image-placeholder.jpg" data-src="./media/mountain-rainbow-300x400.jpg" alt=""></picture>
+    <picture><img src="./media/image-placeholder.jpg" data-src="./media/waterfall-300x400.jpg" alt=""></picture>
+
+    <script src="./lazyload.js" defer></script>
 </body>
 </html>
