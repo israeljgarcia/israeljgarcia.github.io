@@ -122,8 +122,12 @@ main {
     .hero-container {
         display: flex;
         flex-direction: column;
+        position: relative;
 
         .hero-summary {
+            position: absolute;
+            top: 10px;
+            left: 10px;
             background-color: $secondary-color;
             padding: 5px 10px;
             border: 4px solid $dark-accent;
@@ -142,11 +146,15 @@ main {
                 margin: 0;
                 padding: 0;
             }
+        }
 
             picture {
                 width: 100%;
             }
-        }
+    }
+
+    #hero-image {
+        width: 100%;
     }
 
     .preston-weather {

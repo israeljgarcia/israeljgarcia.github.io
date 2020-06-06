@@ -2,11 +2,6 @@
   main {
     max-width: 1024px;
   }
-  main .hero-container .hero-summary {
-    position: absolute;
-    top: 40vh;
-    left: 20vw;
-  }
   main .hero-container .hero-summary p {
     font-size: 1rem;
   }

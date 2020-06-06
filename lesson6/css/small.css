@@ -115,9 +115,13 @@ main .hero-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 main .hero-container .hero-summary {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   background-color: #dbe2ef;
   padding: 5px 10px;
   border: 4px solid #112d4e;
@@ -139,7 +143,11 @@ main .hero-container .hero-summary .hero-summary-title {
   padding: 0;
 }
 
-main .hero-container .hero-summary picture {
+main .hero-container picture {
+  width: 100%;
+}
+
+main #hero-image {
   width: 100%;
 }
 
