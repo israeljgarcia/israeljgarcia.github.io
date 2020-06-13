@@ -1,0 +1,56 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+$main-font: 'Ubuntu', Arial, sans-serif;
+
+// Color scheme
+$even-row-color: #e7f0ed;
+$odd-row-color: #e7ffed;
+$column-color: #628ca6;
+$heading-color: #7fb9c2;
+
+main {
+    font-family: $main-font;
+    
+    table, th, td {
+        border: 1px solid rgb(218, 218, 218);
+        border-collapse: collapse;
+        text-align: center;
+        padding: 5px;
+    }
+
+    table {
+        margin: 0 auto;
+        font-size: 16px;
+        box-shadow: 10px 10px 10px $column-color;
+
+        tr:nth-child(odd) {
+            background-color: $odd-row-color;
+        }
+
+        tr:nth-child(even) {
+            background-color: $even-row-color;
+        }
+
+        // Finds the 3rd table data in the 5th table row
+        tr:nth-child(5) td:nth-child(3) {
+            background-color: $column-color;
+            color: white;
+        }
+
+        .main-col {
+            font-weight: 700;
+            background-color: $column-color;
+            color: white;
+        }
+
+        thead tr td {
+            font-size: 20px;
+            background-color: $heading-color;
+        }
+
+        tfoot td {
+            background-color: $heading-color;
+            font-size: 12px;
+        }
+    }
+}

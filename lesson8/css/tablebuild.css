@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+main {
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+main table, main th, main td {
+  border: 1px solid #dadada;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px;
+}
+
+main table {
+  margin: 0 auto;
+  font-size: 16px;
+  -webkit-box-shadow: 10px 10px 10px #628ca6;
+          box-shadow: 10px 10px 10px #628ca6;
+}
+
+main table tr:nth-child(odd) {
+  background-color: #e7ffed;
+}
+
+main table tr:nth-child(even) {
+  background-color: #e7f0ed;
+}
+
+main table tr:nth-child(5) td:nth-child(3) {
+  background-color: #628ca6;
+  color: white;
+}
+
+main table .main-col {
+  font-weight: 700;
+  background-color: #628ca6;
+  color: white;
+}
+
+main table thead tr td {
+  font-size: 20px;
+  background-color: #7fb9c2;
+}
+
+main table tfoot td {
+  background-color: #7fb9c2;
+  font-size: 12px;
+}
+/*# sourceMappingURL=tablebuild.css.map */
