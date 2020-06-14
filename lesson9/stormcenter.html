@@ -77,7 +77,8 @@
     
                 <label for="severity">
                     Severity <br>
-                    <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks">
+                    <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" 
+                    oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
                     <span id="severity-value">5</span>
                 </label>
     
@@ -106,8 +107,9 @@
             </fieldset>
 
             <fieldset>
-                <legend>Are you in danger?</legend>
+                <legend>Danger Level</legend>
                 <label for="yes">
+                    Are you In Danger? <br>
                     <input type="radio" name="danger" id="yes" value="yes"> Yes
                 </label>
     
@@ -120,16 +122,13 @@
                 </label>
             </fieldset>
 
-            <fieldset>
-                <label for="add-info">
-                    Additional Information <br>
+            <fieldset> <legend>Additional Information</legend>
+                <label for="add-info"> 
                     <textarea name="add-info" id="add-info" cols="30" rows="10"></textarea>
                 </label>
             </fieldset>            
 
-            
-
-            <button type="submit">Report Storm</button>
+            <input type="submit" value="Report Storm" id="submit-button">
         </form>
     </main>
 
@@ -143,5 +142,6 @@
     <script src="./js/webfontload.js"></script>
     <script src="./js/responsive-navbar.js"></script>
     <script src="./js/current-date.js"></script>
+    <script src="./js/adjust-severity.js"></script>
 </body>
 </html>

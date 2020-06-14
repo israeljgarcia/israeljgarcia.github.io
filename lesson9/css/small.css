@@ -124,6 +124,18 @@ main form fieldset {
   margin: 10px 0;
 }
 
+main form fieldset label {
+  margin: 5px 0;
+}
+
+main form fieldset label textarea {
+  resize: none;
+}
+
+main form #submit-button {
+  text-align: center;
+}
+
 footer {
   max-width: 600px;
   margin: 0 auto;

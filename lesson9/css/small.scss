@@ -123,6 +123,18 @@ main {
             justify-content: center;
             align-items: center;
             margin: 10px 0;
+
+            label {
+                margin: 5px 0;
+
+                textarea {
+                    resize: none;
+                }
+            }
+        }
+
+        #submit-button {
+            text-align: center;
         }
 
     }
