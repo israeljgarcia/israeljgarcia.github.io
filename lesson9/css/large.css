@@ -1,0 +1,47 @@
+@media (min-width: 800px) {
+  main {
+    max-width: 1024px;
+  }
+  main .hero-container .hero-summary p {
+    font-size: 1rem;
+  }
+  main .hero-container .hero-summary .hero-summary-title {
+    font-size: 1.5rem;
+  }
+  main .preston-weather {
+    display: block;
+  }
+  main .preston-weather h3 {
+    margin: 0;
+    height: 40px;
+  }
+  main .preston-weather .days-of-week {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    -ms-grid-rows: 20px 200px;
+        grid-template-rows: 20px 200px;
+    background-color: #dbe2ef;
+    padding: 15px;
+  }
+  main .preston-article h3 {
+    margin-top: 1px;
+  }
+  main .preston-article #light-festival {
+    width: 35%;
+    float: right;
+    margin-left: 2px;
+  }
+  main .gallery-container div {
+    margin: 10px;
+  }
+  main .gallery-container div:hover {
+    -webkit-box-shadow: 0 8px 12px grey;
+            box-shadow: 0 8px 12px grey;
+  }
+  footer {
+    max-width: 1024px;
+  }
+}
+/*# sourceMappingURL=large.css.map */

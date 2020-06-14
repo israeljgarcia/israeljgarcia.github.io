@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a form where you can submit a storm occurance for Preston, Soda Springs, or Fish Haven">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <title>Storm Center</title>
+</head>
+<body>
+    <header>
+        <img src="/lesson3/images/weather-icon.png" alt="site logo" />
+        <div>
+          <h1>Get Easy Climate</h1>
+          <p>Weather when you need it.</p>
+        </div> 
+    </header>
+
+    <nav>
+        <ul class="navigation-menu">
+            <li><a class="menu-label" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+    </nav>
+    
+    <main>
+        <h2>Storm Center</h2>
+
+        <form action="./thanks.html">
+            <fieldset> <legend>Reporter Info</legend>
+                <label for="name">
+                    Name *<br>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z ]{5,}" autofocus required>
+                </label>
+    
+                <label for="email">
+                    Email<br>
+                    <input type="email" id="email" name="email" placeholder="example@Gmail.com">
+                </label>
+    
+                <label for="phone">
+                    Phone Number *<br>
+                    <input type="tel" name="phone" id="phone" required>
+                </label>
+    
+                <label for="zip">
+                    Zip Code *<br>
+                    <input type="number" name="zip" id="zip" required>
+                </label>
+            </fieldset>
+            
+            <fieldset> <legend>Storm Info</legend>
+                <label for="date">
+                    Storm Date <br>
+                    <input type="date" name="date" id="date">
+                </label>
+    
+                <label for="storm-type">
+                    Storm type <br>
+                    <input name="storm-type" list="storm-list">
+                </label>
+                <datalist id="storm-list">
+                    <option value="Flash Flood">
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+    
+                <label for="severity">
+                    Severity <br>
+                    <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks">
+                    <span id="severity-value">5</span>
+                </label>
+    
+                <datalist id="tickmarks">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+    
+                <label for="storm-region">
+                    Storm Region <br>
+                </label>
+                <select name="storm-region" id="storm-region">
+                    <option selected="selected" value="" disabled>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Are you in danger?</legend>
+                <label for="yes">
+                    <input type="radio" name="danger" id="yes" value="yes"> Yes
+                </label>
+    
+                <label for="maybe">
+                    <input type="radio" name="danger" id="maybe" value="maybe"> Maybe
+                </label>
+    
+                <label for="no">
+                    <input type="radio" name="danger" id="no" value="no"> No
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="add-info">
+                    Additional Information <br>
+                    <textarea name="add-info" id="add-info" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>            
+
+            
+
+            <button type="submit">Report Storm</button>
+        </form>
+    </main>
+
+    <footer>
+        <p id="footer-info">
+            &copy; <span id="year"></span> | Israel Garcia | 
+            <a href="/lesson5/preston-5.html">Get Easy Weather</a>
+          </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webfontload.js"></script>
+    <script src="./js/responsive-navbar.js"></script>
+    <script src="./js/current-date.js"></script>
+</body>
+</html>
