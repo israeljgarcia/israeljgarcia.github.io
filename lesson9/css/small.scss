@@ -127,6 +127,10 @@ main {
             label {
                 margin: 5px 0;
 
+                input {
+                    padding: 8px;
+                }
+
                 textarea {
                     resize: none;
                 }
@@ -135,6 +139,14 @@ main {
 
         #submit-button {
             text-align: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 3px 0;
+        }
+
+        #submit-button:hover {
+            background-color: $dark-accent;
+            color: white;
         }
 
     }

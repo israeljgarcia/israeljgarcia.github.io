@@ -128,12 +128,24 @@ main form fieldset label {
   margin: 5px 0;
 }
 
+main form fieldset label input {
+  padding: 8px;
+}
+
 main form fieldset label textarea {
   resize: none;
 }
 
 main form #submit-button {
   text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 3px 0;
+}
+
+main form #submit-button:hover {
+  background-color: #112d4e;
+  color: white;
 }
 
 footer {
