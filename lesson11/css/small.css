@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
+body {
+  background-color: #f7f7f7;
+}
+
+#banner {
+  background-color: #fdcb9e;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Bitter", "Times New Roman", Times, serif;
+  text-align: center;
+  display: none;
+  color: black;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #ddf3f5;
+  max-width: 100%;
+  height: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header img {
+  display: inline-block;
+  padding: 1vh;
+  height: 10vh;
+  width: auto;
+  margin: auto 0 auto auto;
+}
+
+header h1 {
+  font-family: "Bitter", "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 4vh;
+}
+
+header p {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+nav .navigation-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #3f3f44;
+}
+
+nav .navigation-menu li {
+  display: none;
+}
+
+nav .navigation-menu li:first-child {
+  display: block;
+}
+
+nav .navigation-menu li a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  min-height: 100%;
+}
+
+nav .navigation-menu li .active {
+  background-color: #ccceb9;
+  color: black;
+}
+
+nav .navigation-menu li a:hover {
+  background-color: #fdcb9e;
+  color: black;
+}
+
+nav .responsive li {
+  display: block;
+}
+
+main {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+main section {
+  margin: 20px;
+}
+
+main h2 {
+  font-size: 2rem;
+  padding: 10px;
+  color: #3f3f44;
+}
+
+main .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+main .hero-container .hero-summary {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ddf3f5;
+  padding: 5px 10px;
+  border: 4px solid #3f3f44;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #f7f7f7;
+          box-shadow: 0 0 15px #f7f7f7;
+}
+
+main .hero-container .hero-summary p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+main .hero-container .hero-summary .hero-summary-title {
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+main .hero-container picture {
+  width: 100%;
+}
+
+main #hero-image {
+  width: 100%;
+}
+
+main .preston-weather {
+  display: none;
+}
+
+main .preston-article {
+  background-color: #ddf3f5;
+  padding: 10px;
+  text-align: left;
+}
+
+main .preston-article h2 {
+  margin: 0;
+  padding: 0;
+}
+
+main .preston-article p {
+  font-size: 1.2rem;
+}
+
+main .preston-article #light-festival {
+  width: 50%;
+  float: right;
+  padding: 2px;
+}
+
+main .preston-contact {
+  background-color: #ddf3f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .preston-contact #preston-map {
+  width: 40%;
+}
+
+main .preston-contact div {
+  background-color: #f7f7f7;
+  width: 100%;
+  border: 4px solid #3f3f44;
+}
+
+main .preston-contact h2 {
+  font-size: 1.2rem;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+main .preston-contact p {
+  font-size: .9rem;
+  margin: 5px;
+  text-align: left;
+}
+
+main .preston-contact .spacer {
+  margin-bottom: 13px;
+}
+
+main .gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .gallery-container div {
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+  margin-bottom: 10px;
+}
+
+main .gallery-container div p {
+  margin: 10px;
+  text-align: center;
+}
+
+main .gallery-container picture {
+  width: 100%;
+  padding: 0;
+}
+
+main .gallery-container picture img[data-src] {
+  -webkit-filter: blur(0.2em);
+          filter: blur(0.2em);
+}
+
+main .gallery-container picture img {
+  -webkit-filter: blur(0em);
+          filter: blur(0em);
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+  width: 100%;
+}
+
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #ddf3f5;
+}
+
+footer p a {
+  text-decoration: underline;
+  color: #3f3f44;
+  font-weight: 600;
+}
+/*# sourceMappingURL=small.css.map */

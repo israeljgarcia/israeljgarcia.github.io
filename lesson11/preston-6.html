@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page contains weather and news relevant to Preston, Idaho.">
+    <title>Preston</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css">
+  </head>
+  <body>
+    <div id="banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+      <img src="/lesson3/images/weather-icon.png" alt="site logo" />
+      <div>
+        <h1>Get Easy Climate</h1>
+        <p>Weather when you need it.</p>
+      </div>  
+    </header>
+
+    <nav>
+      <ul class="navigation-menu">
+        <li><a class="menu-label" href="#">&#9776; Menu</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a class="active" href="./preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="./stormcenter.html">Storm Center</a></li>
+        <li><a href="./gallery7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Preston Idaho</h2>
+
+      <section class="hero-container">
+        <picture>
+
+          <source
+            srcset="./images/hero-image-400.jpg"
+            media="(min-width: 480px) and (max-width: 699px)"
+          >
+
+          <source
+            srcset="./images/hero-image-600.jpg"
+            media="(min-width: 700px) and (max-width: 899px)"
+          >
+
+          <source
+            srcset="./images/hero-image-800.jpg"
+            media="(min-width: 900px)"
+          >
+
+          <img
+            id="hero-image"
+            src="./images/hero-image-250.jpg"
+            alt="landscape image of idaho hills and snowy mountains in background"
+          />
+        </picture>
+
+        <div class="hero-summary">
+            <h2 class="hero-summary-title">Weather Summary</h2>
+            <p>Current: Sunny, 49&#176;</p>
+            <p>Today's High: <span id="high">49</span>&#176;</p>
+            <p>Humidity: 50%</p>
+            <p>Wind Speed: <span id="wind-speed">5</span>mph</p>
+            <p>Wind Chill: <span id="wind-chill">0</span>&#176;</p>
+        </div>
+      </section>
+
+      <section class="preston-weather">
+        <div class="days-of-week">
+          <h3 class="mon">Mon</h3>
+          
+
+          <h3 class="tues">Tues</h3>
+          
+
+          <h3 class="wed">Wed</h3>
+          
+
+          <h3 class="thurs">Thurs</h3>
+          
+
+          <h3 class="fri">Fri</h3>
+          
+
+          <div class="preston-temperature">
+            <img src="./images/sunny.png" alt="sunny icon" />
+            <p>70&#176;</p>
+          </div>
+
+          <div class="preston-temperature">
+            <img src="./images/storm.png" alt="storm icon" />
+            <p>58&#176;</p>
+          </div>
+
+          <div class="preston-temperature">
+            <img src="./images/snow.png" alt="snow icon" />
+            <p>34&#176;</p>
+          </div>
+
+          <div class="preston-temperature">
+            <img src="./images/rain.png" alt="rain icon" />
+            <p>52&#176;</p>
+          </div>
+
+          <div class="preston-temperature">
+            <img src="./images/partly-cloudy.png" alt="clouds icon" />
+            <p>60&#176;</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="preston-article">
+        <h2>Festival of Lights</h2>
+        <h3>By Izzy</h3>
+        <img id="light-festival" src="./images/light-festival.jpg" alt="holiday light festival">
+        <p class="article">
+          
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+          eius culpa iste, incidunt reiciendis fugit, ullam amet placeat
+          quisquam accusamus natus obcaecati, iure sit. Laboriosam libero
+          excepturi aliquam sed Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Distinctio eius culpa iste, incidunt reiciendis
+          fugit, ullam amet placeat quisquam accusamus natus obcaecati, iure
+          sit. Laboriosam libero excepturi aliquam sedLorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Distinctio eius culpa iste,
+          incidunt reiciendis fugit, ullam amet placeat quisquam accusamus natus
+          obcaecati, iure sit. Laboriosam libero excepturi aliquam sed
+        </p>
+      </section>
+
+      <section class="preston-contact">
+        <img id="preston-map" src="./images/preston-idaho-map.PNG" alt="map of Preston, Idaho">
+
+        <div>
+          <h2>Get Easy Climate</h2>
+          <p>1111 E. Random Rd.</p>
+          <p class="spacer">Preston, Idaho</p>
+          <p>123-456-7890</p>
+          <p>GetEasyClimate@gec.com</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-info">
+        &copy; <span id="year"></span> | Israel Garcia | 
+        <a href="/lesson5/preston-5.html">Get Easy Weather</a>
+      </p>
+    </footer>
+    <script src="./js/current-date.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/windchill.js"></script>
+    <script src="./js/responsive-navbar.js"></script>
+  </body>
+</html>
