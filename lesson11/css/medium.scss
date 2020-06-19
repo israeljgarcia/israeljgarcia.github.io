@@ -89,6 +89,17 @@ $dark-accent: #112d4e;
                 margin: 5px;
             }
         }
+
+        .town-cards {
+            display: block;
+
+            section {
+
+                img {
+                    float: right;
+                }
+            }
+        }
     }
 
     footer {max-width: 800px;}

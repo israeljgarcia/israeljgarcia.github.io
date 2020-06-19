@@ -245,6 +245,32 @@ main {
             }
         }
     }
+
+    .town-cards {
+        display: flex;
+        flex-direction: column;
+
+        section {
+            width: 320px;
+            margin: 10px auto;
+            background-color: $secondary-color;
+            padding: 10px;
+
+            h2 {
+                padding: 0;
+                margin: 10px;
+            }
+
+            p {
+                margin: 5px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
 }
 
 

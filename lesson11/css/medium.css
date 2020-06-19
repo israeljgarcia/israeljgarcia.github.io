@@ -73,6 +73,12 @@
   main .gallery-container div {
     margin: 5px;
   }
+  main .town-cards {
+    display: block;
+  }
+  main .town-cards section img {
+    float: right;
+  }
   footer {
     max-width: 800px;
   }
