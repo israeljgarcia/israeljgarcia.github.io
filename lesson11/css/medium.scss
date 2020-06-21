@@ -4,7 +4,7 @@ $bright-accent-color: #FCA874;
 $light-accent: #3f72af;
 $dark-accent: #112d4e;
 
-@media (min-width: 32.5em) {
+@media (min-width: 600px) {
     nav {
         .navigation-menu {
             display: flex;
@@ -89,14 +89,35 @@ $dark-accent: #112d4e;
                 margin: 5px;
             }
         }
-
         .town-cards {
             display: block;
 
             section {
+                width: 600px;
+                height: 400px;
+
+                p {
+                    text-align: left;
+                    margin-top: 20px;
+                }
+
+                .town-motto {
+                    text-align: center;
+                    margin: 5px;
+                }
 
                 img {
+                    max-width: 350px;
+                    margin-top: 10px;
+                }
+
+                #preston-image {
                     float: right;
+                }
+
+                #fish-haven-image, #soda-springs-image {
+                    float: left;
+                    margin-right: 30px;
                 }
             }
         }

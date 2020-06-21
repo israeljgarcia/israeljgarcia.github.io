@@ -19,6 +19,7 @@ fetch(requestUrl)
 
             townName.textContent = towns[i].name;
             townMotto.textContent = towns[i].motto;
+            townMotto.setAttribute('class', 'town-motto');
             yearFounded.textContent = `Year founded: ${towns[i].yearFounded}`;
             population.textContent = `Population: ${towns[i].currentPopulation}`;
             rainfall.textContent = ` Average Rainfall: ${towns[i].averageRainfall}"`;
@@ -26,12 +27,15 @@ fetch(requestUrl)
             if(towns[i].name == 'Preston') {
                 image.setAttribute('src', './images/preston-600x400.jpg');
                 image.setAttribute('alt', 'Image of Preston')
+                image.setAttribute('id', 'preston-image');
             } else if(towns[i].name == "Fish Haven") {
                 image.setAttribute('src', './images/fish-haven-600x400.jpg');
                 image.setAttribute('alt', 'Image of Fish Haven');
+                image.setAttribute('id', 'fish-haven-image');
             } else if(towns[i].name == "Soda Springs") {
                 image.setAttribute('src', './images/soda-springs-600x400.jpg');
                 image.setAttribute('alt', "Image in Soda Springs");
+                image.setAttribute('id', 'soda-springs-image');
             }
             
             card.appendChild(townName);

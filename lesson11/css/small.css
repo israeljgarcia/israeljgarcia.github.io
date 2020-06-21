@@ -276,10 +276,16 @@ main .town-cards section {
 main .town-cards section h2 {
   padding: 0;
   margin: 10px;
+  font-family: "Bitter", "Times New Roman", Times, serif;
 }
 
 main .town-cards section p {
   margin: 5px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+main .town-cards section .town-motto {
+  font-style: italic;
 }
 
 main .town-cards section img {

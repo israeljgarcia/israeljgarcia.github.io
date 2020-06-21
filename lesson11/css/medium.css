@@ -1,4 +1,4 @@
-@media (min-width: 32.5em) {
+@media (min-width: 600px) {
   nav .navigation-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -76,8 +76,28 @@
   main .town-cards {
     display: block;
   }
+  main .town-cards section {
+    width: 600px;
+    height: 400px;
+  }
+  main .town-cards section p {
+    text-align: left;
+    margin-top: 20px;
+  }
+  main .town-cards section .town-motto {
+    text-align: center;
+    margin: 5px;
+  }
   main .town-cards section img {
+    max-width: 350px;
+    margin-top: 10px;
+  }
+  main .town-cards section #preston-image {
     float: right;
+  }
+  main .town-cards section #fish-haven-image, main .town-cards section #soda-springs-image {
+    float: left;
+    margin-right: 30px;
   }
   footer {
     max-width: 800px;

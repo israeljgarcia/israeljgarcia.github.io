@@ -259,10 +259,16 @@ main {
             h2 {
                 padding: 0;
                 margin: 10px;
+                font-family: $secondary-font;
             }
 
             p {
                 margin: 5px;
+                font-family: $main-font;
+            }
+
+            .town-motto {
+                font-style: italic;
             }
 
             img {
