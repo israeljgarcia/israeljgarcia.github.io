@@ -13,7 +13,7 @@ fetch(weatherURL)
     wind_speed = Math.floor(jsObject.wind.speed);
     high_temp = Math.floor(jsObject.main.temp_max);
 
-    document.getElementById("current-climate").textContent = ` ${Math.floor(jsObject.main.temp)}&#176; & ${jsObject.weather[0].main}`;
+    document.getElementById("current-climate").textContent = ` ${jsObject.weather[0].main}`;
     document.getElementById("high").textContent = high_temp;
     document.getElementById("humidity").textContent = `${jsObject.main.humidity}`;
     document.getElementById("wind-speed").textContent = wind_speed;
