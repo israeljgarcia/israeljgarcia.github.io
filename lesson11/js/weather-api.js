@@ -47,7 +47,8 @@ fetch(forecastURL)
         let date = new Date(formatDate(day.dt_txt));
         document.getElementById(`day-${index}`).textContent = daysOfWeek[date.getDay()];
         document.getElementById(`weather-${index}`).textContent = Math.floor(day.main.temp);
-        document.getElementById(`weather-icon-${index}`).setAttribute("src", `${imagesrc}${day.weather[0].icon}.png`)
+        document.getElementById(`weather-icon-${index}`).setAttribute("src", `${imagesrc}${day.weather[0].icon}.png`);
+        document.getElementById(`weather-icon-${index}`).setAttribute("alt", day.weather[0].description);
         index++;
     });
 
