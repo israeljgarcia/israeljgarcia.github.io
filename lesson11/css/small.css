@@ -297,12 +297,13 @@ footer {
   margin: 0 auto;
   padding: 5px 0;
   text-align: center;
-  background-color: #ddf3f5;
+  background-color: #3f3f44;
+  color: white;
 }
 
 footer p a {
   text-decoration: underline;
-  color: #3f3f44;
+  color: white;
   font-weight: 600;
 }
 /*# sourceMappingURL=small.css.map */
