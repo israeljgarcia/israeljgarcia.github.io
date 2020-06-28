@@ -62,54 +62,54 @@
 
         <div class="hero-summary">
             <h2 class="hero-summary-title">Weather Summary</h2>
-            <p>Current: Sunny, 49&#176;</p>
-            <p>Today's High: <span id="high">49</span>&#176;</p>
-            <p>Humidity: 50%</p>
-            <p>Wind Speed: <span id="wind-speed">5</span>mph</p>
-            <p>Wind Chill: <span id="wind-chill">0</span>&#176;</p>
+            <p>Current:<span id="current-climate"></span></p>
+            <p>Today's High: <span id="high"></span>&#176;</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
         </div>
       </section>
 
       <section class="preston-weather">
         <div class="days-of-week">
-          <h3 class="mon">Mon</h3>
+          <h3 id="day-1" class="mon">Mon</h3>
           
 
-          <h3 class="tues">Tues</h3>
+          <h3 id="day-2" class="tues">Tues</h3>
           
 
-          <h3 class="wed">Wed</h3>
+          <h3 id="day-3" class="wed">Wed</h3>
           
 
-          <h3 class="thurs">Thurs</h3>
+          <h3 id="day-4" class="thurs">Thurs</h3>
           
 
-          <h3 class="fri">Fri</h3>
+          <h3 id="day-5" class="fri">Fri</h3>
           
 
           <div class="preston-temperature">
-            <img src="./images/sunny.png" alt="sunny icon" />
-            <p>70&#176;</p>
+            <img src="./images/sunny.png" alt="" id="weather-icon-1" />
+            <p><span id="weather-1"></span>&#176;</p>
           </div>
 
           <div class="preston-temperature">
-            <img src="./images/storm.png" alt="storm icon" />
-            <p>58&#176;</p>
+            <img src="./images/storm.png" alt="storm icon" id="weather-icon-2" />
+            <p><span id="weather-2"></span>&#176;</p>
           </div>
 
           <div class="preston-temperature">
-            <img src="./images/snow.png" alt="snow icon" />
-            <p>34&#176;</p>
+            <img src="./images/snow.png" alt="snow icon" id="weather-icon-3" />
+            <p><span id="weather-3"></span> &#176;</p>
           </div>
 
           <div class="preston-temperature">
-            <img src="./images/rain.png" alt="rain icon" />
-            <p>52&#176;</p>
+            <img src="./images/rain.png" alt="rain icon" id="weather-icon-4" />
+            <p><span id="weather-4"></span> &#176;</p>
           </div>
 
           <div class="preston-temperature">
-            <img src="./images/partly-cloudy.png" alt="clouds icon" />
-            <p>60&#176;</p>
+            <img src="./images/partly-cloudy.png" alt="clouds icon" id="weather-icon-5" />
+            <p><span id="weather-5"></span> &#176;</p>
           </div>
         </div>
       </section>
@@ -152,9 +152,9 @@
         <a href="/lesson5/preston-5.html">Get Easy Weather</a>
       </p>
     </footer>
+    <script src="./js/weather-api.js"></script>
     <script src="./js/current-date.js"></script>
     <script src="./js/banner.js"></script>
-    <script src="./js/windchill.js"></script>
     <script src="./js/responsive-navbar.js"></script>
   </body>
 </html>
