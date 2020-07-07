@@ -161,7 +161,7 @@ main .preston-weather {
 
 main .preston-article {
   background-color: #ddf3f5;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: left;
 }
 
@@ -178,6 +178,11 @@ main .preston-article #light-festival {
   width: 50%;
   float: right;
   padding: 2px;
+}
+
+main #load-events {
+  background-color: #ddf3f5;
+  border: 10px solid #3f3f44;
 }
 
 main .preston-contact {
@@ -206,7 +211,7 @@ main .preston-contact h2 {
 }
 
 main .preston-contact p {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 5px;
   text-align: left;
 }
@@ -231,7 +236,7 @@ main .gallery-container div {
   margin-bottom: 10px;
 }
 
-main .gallery-container div p {
+main .gallery-container div figcaption {
   margin: 10px;
   text-align: center;
 }

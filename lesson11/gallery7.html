@@ -1,82 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The gallery of photots for Preston, Soda Springs, and Fish Haven!">
-    <link rel="stylesheet" href="./css/small.css">
-    <link rel="stylesheet" href="./css/medium.css">
-    <link rel="stylesheet" href="./css/large.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The gallery of photots for Preston, Soda Springs, and Fish Haven!"
+    />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
     <title>Gallery</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="/lesson3/images/weather-icon.png" alt="site logo" />
+      <img src="/lesson3/images/weather-icon.png" alt="site logo" />
+      <div>
+        <h1>Get Easy Climate</h1>
+        <p>Weather when you need it.</p>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation-menu">
+        <li><a class="menu-label" href="#">&#9776; Menu</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="./preston-6.html">Preston</a></li>
+        <li><a href="./soda-springs.html">Soda Springs</a></li>
+        <li><a href="./fish-haven.html">Fish Haven</a></li>
+        <li><a href="./stormcenter.html">Storm Center</a></li>
+        <li><a class="active" href="./gallery7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Weather Gallery</h2>
+
+      <div class="gallery-container">
         <div>
-          <h1>Get Easy Climate</h1>
-          <p>Weather when you need it.</p>
-        </div>  
-      </header>
-  
-      <nav>
-        <ul class="navigation-menu">
-          <li><a class="menu-label" href="#">&#9776; Menu</a></li>
-          <li><a href="./">Home</a></li>
-          <li><a href="./preston-6.html">Preston</a></li>
-          <li><a href="#">Soda Springs</a></li>
-          <li><a href="#">Fish Haven</a></li>
-          <li><a href="./stormcenter.html">Storm Center</a></li>
-          <li><a class="active" href="./gallery7.html">Gallery</a></li>
-        </ul>
-      </nav>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/crosswalk-300x400.jpg"
+              alt="City crosswalk"
+          /></picture>
+          <figcaption>City Crosswalk</figcaption>
+        </div>
 
-      <main>
-          <h2>Weather Gallery</h2>
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/snowy-mountains-300x400.jpg"
+              alt=""
+          /></picture>
+          <figcaption>Snowy Mountains</figcaption>
+        </div>
 
-          <div class="gallery-container">
-            <div>
-              <picture><img src="./images/image-placeholder.jpg" data-src="./images/crosswalk-300x400.jpg" alt="City crosswalk"></picture>
-              <p>City Crosswalk</p>
-            </div>
-            
-            <div>
-              <picture><img src="./images/image-placeholder.jpg" data-src="./images/snowy-mountains-300x400.jpg" alt=""></picture>
-              <p>Snowy Mountains</p>
-            </div>
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/rain-city-300x400.jpg"
+              alt=""
+          /></picture>
+          <figcaption>Rainy City</figcaption>
+        </div>
 
-            <div>
-              <picture><img src="./images/image-placeholder.jpg" data-src="./images/rain-city-300x400.jpg" alt=""></picture>
-              <p>Rainy City</p>
-            </div>
-            
-            <div>
-              <picture><img src="./images/image-placeholder.jpg" data-src="./images/waterfall-300x400.jpg" alt=""></picture>
-              <p>Waterfall</p>
-            </div>
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/waterfall-300x400.jpg"
+              alt=""
+          /></picture>
+          <figcaption>Waterfall</figcaption>
+        </div>
 
-            <div>
-              <picture><img src="./images/image-placeholder.jpg" data-src="./images/mountain-rainbow-300x400.jpg" alt=""></picture>
-              <p>Rainbow over Mountain</p>
-            </div>
-            
-            <div>
-              <picture><img src="./images/image-placeholder.jpg" data-src="./images/trail-300x400.jpg" alt=""></picture>
-              <p>Trail in Preston</p>
-            </div>            
-          </div>
-      </main>
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/mountain-rainbow-300x400.jpg"
+              alt=""
+          /></picture>
+          <figcaption>Rainbow over mountain</figcaption>
+        </div>
 
-      <footer>
-        <p id="footer-info">
-          &copy; <span id="year"></span> | Israel Garcia | 
-          <a href="/lesson5/preston-5.html">Get Easy Weather</a>
-        </p>
-      </footer>
-      <script src="./js/responsive-navbar.js"></script>
-      <script src="./js/current-date.js"></script>
-      <script src="./js/lazyload.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-      <script src="./js/webfontload.js"></script>
-</body>
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/trail-300x400.jpg"
+              alt=""
+            />
+          </picture>
+          <figcaption>Trail</figcaption>
+        </div>
+
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/little-house-300x400.jpg"
+              alt=""
+            />
+          </picture>
+          <figcaption>Little House</figcaption>
+        </div>
+
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/small-waterfall-300x400.jpg"
+              alt=""
+            />
+          </picture>
+          <figcaption>Small Waterfall</figcaption>
+        </div>
+
+        <div>
+          <picture
+            ><img
+              src="./images/image-placeholder.jpg"
+              data-src="./images/dusk-mountain-300x400.jpg"
+              alt=""
+            />
+          </picture>
+          <figcaption>Moutain at Dusk</figcaption>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p id="footer-info">
+        &copy; <span id="year"></span> | Israel Garcia |
+        <a href="/lesson5/preston-5.html">Get Easy Weather</a>
+      </p>
+    </footer>
+    <script src="./js/responsive-navbar.js"></script>
+    <script src="./js/current-date.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/webfontload.js"></script>
+  </body>
 </html>

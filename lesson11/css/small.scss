@@ -1,5 +1,5 @@
 //imports
-@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
 
 //Colors
 $main-color: #f7f7f7;
@@ -9,290 +9,290 @@ $light-accent: #3f72af;
 $dark-accent: #3f3f44;
 
 //Fonts
-$main-font: 'Montserrat', Arial, sans-serif;
-$secondary-font: 'Bitter', 'Times New Roman', Times, serif;
+$main-font: "Montserrat", Arial, sans-serif;
+$secondary-font: "Bitter", "Times New Roman", Times, serif;
 
 body {
-    background-color: $main-color;
+  background-color: $main-color;
 }
 
 #banner {
-    background-color: $bright-accent-color;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: $secondary-font;
-    text-align: center;
-    display: none;
-    color: black;
+  background-color: $bright-accent-color;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: $secondary-font;
+  text-align: center;
+  display: none;
+  color: black;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto;
-    background-color: $secondary-color;
-    max-width: 100%;
-    height: 10%;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: $secondary-color;
+  max-width: 100%;
+  height: 10%;
+  justify-content: center;
 
-    img {
-        display: inline-block;
-        padding: 1vh;
-        height: 10vh;
-        width: auto;
-        margin: auto 0 auto auto;
-    }
+  img {
+    display: inline-block;
+    padding: 1vh;
+    height: 10vh;
+    width: auto;
+    margin: auto 0 auto auto;
+  }
 
-    h1 {
-        font-family: $secondary-font; 
-        text-align: center;
-        font-size: 4vh;
-    }
+  h1 {
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: 4vh;
+  }
 
-    p {
-        text-align: center;
-        font-size: 1rem;
-        font-style: italic;
-    }
-
+  p {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+  }
 }
 
 nav {
-    margin: 0 auto;
-    max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 
-    .navigation-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: $dark-accent;
+  .navigation-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $dark-accent;
 
-        li {
-            display: none;
-        }
-
-        li:first-child {
-            display: block;
-        }
-
-        li {
-
-            a {
-                display: block;
-                padding: 0.75rem;
-                text-align: center;
-                text-decoration: none;
-                color: white;
-                font-weight: 700;
-                min-height: 100%;
-            }
-
-            .active {
-                background-color: #ccceb9;
-                color: black;
-            }    
-
-            a:hover {
-                background-color: $bright-accent-color;
-                color: black;
-            }
-            
-        }
+    li {
+      display: none;
     }
 
-    .responsive li {
+    li:first-child {
+      display: block;
+    }
+
+    li {
+      a {
         display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        min-height: 100%;
+      }
+
+      .active {
+        background-color: #ccceb9;
+        color: black;
+      }
+
+      a:hover {
+        background-color: $bright-accent-color;
+        color: black;
+      }
     }
+  }
+
+  .responsive li {
+    display: block;
+  }
 }
 
 main {
-    text-align: center;
-    padding-bottom: 2.5rem;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
 
-    section{
-        margin: 20px;
+  section {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding: 10px;
+    color: $dark-accent;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .hero-summary {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: $secondary-color;
+      padding: 5px 10px;
+      border: 4px solid $dark-accent;
+      border-radius: 5px;
+      box-shadow: 0 0 15px $main-color;
+
+      p {
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .hero-summary-title {
+        font-weight: 900;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    picture {
+      width: 100%;
+    }
+  }
+
+  #hero-image {
+    width: 100%;
+  }
+
+  .preston-weather {
+    display: none;
+  }
+
+  .preston-article {
+    background-color: $secondary-color;
+    padding: 20px 10px;
+    text-align: left;
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    #light-festival {
+      width: 50%;
+      float: right;
+      padding: 2px;
+    }
+  }
+
+  #load-events {
+    background-color: $secondary-color;
+    border: 10px solid $dark-accent;
+  }
+
+  .preston-contact {
+    background-color: $secondary-color;
+    display: flex;
+    #preston-map {
+      width: 40%;
+    }
+
+    div {
+      background-color: $main-color;
+      width: 100%;
+      border: 4px solid $dark-accent;
     }
 
     h2 {
-        font-size: 2rem;
-        padding: 10px;
-        color: $dark-accent;
+      font-size: 1.2rem;
+      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 3px;
+      text-align: left;
     }
-
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-
-        .hero-summary {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: $secondary-color;
-            padding: 5px 10px;
-            border: 4px solid $dark-accent;
-            border-radius: 5px;
-            box-shadow: 0 0 15px $main-color;
-
-            p {
-                margin: 5px 0;
-                text-align: center;
-            }
-
-            .hero-summary-title {
-                font-weight: 900;
-                font-size: 1.3rem;
-                text-align: center;
-                margin: 0;
-                padding: 0;
-            }
-        }
-
-            picture {
-                width: 100%;
-            }
-    }
-
-    #hero-image {
-        width: 100%;
-    }
-
-    .preston-weather {
-        display: none; 
-    }
-
-    .preston-article {
-        background-color: $secondary-color;
-        padding: 10px;
-        text-align: left;
-
-        h2 {
-            margin: 0;
-            padding: 0;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        #light-festival {
-            width: 50%;
-            float: right;
-            padding: 2px;
-        }
-    }
-
-    .preston-contact {
-        background-color: $secondary-color;
-        display: flex;
-        #preston-map{
-            width: 40%;
-        }
-
-        div {
-            background-color: $main-color;
-            width: 100%;
-            border: 4px solid $dark-accent;
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            padding-top: 0;
-            margin-top: 0;
-            margin-bottom: 3px;
-            text-align: left;
-        }
-
-        p{
-            font-size: .9rem;
-            margin: 5px;
-            text-align: left;
-        }
-
-        .spacer {
-            margin-bottom: 13px;
-        }
-    }
-
-    .gallery-container {
-        display: flex;
-        flex-direction: column; 
-
-        div {
-            box-shadow: 0px 0px 5px grey;
-            margin-bottom: 10px;
-            p {
-                margin: 10px;
-                text-align: center;
-            }
-        }
-
-        picture {
-            width: 100%;
-            padding: 0;
-            img[data-src] {
-                filter: blur(0.2em);
-            }
-
-            img {
-                filter: blur(0em);
-                transition: filter 0.5s;
-                width: 100%;
-            }
-        }
-    }
-
-    .town-cards {
-        display: flex;
-        flex-direction: column;
-
-        section {
-            width: 320px;
-            margin: 10px auto;
-            background-color: $secondary-color;
-            padding: 10px;
-
-            h2 {
-                padding: 0;
-                margin: 10px;
-                font-family: $secondary-font;
-            }
-
-            p {
-                margin: 5px;
-                font-family: $main-font;
-            }
-
-            .town-motto {
-                font-style: italic;
-            }
-
-            img {
-                max-width: 100%;
-            }
-        }
-    }
-
-}
-
-
-footer {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 5px 0;
-    text-align: center;
-    background-color: $dark-accent;
-    color: white;
 
     p {
-        a {
-            text-decoration: underline;
-            color: white;
-            font-weight: 600;
-        }
+      font-size: 0.9rem;
+      margin: 5px;
+      text-align: left;
     }
+
+    .spacer {
+      margin-bottom: 13px;
+    }
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      box-shadow: 0px 0px 5px grey;
+      margin-bottom: 10px;
+      figcaption {
+        margin: 10px;
+        text-align: center;
+      }
+    }
+
+    picture {
+      width: 100%;
+      padding: 0;
+      img[data-src] {
+        filter: blur(0.2em);
+      }
+
+      img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+        width: 100%;
+      }
+    }
+  }
+
+  .town-cards {
+    display: flex;
+    flex-direction: column;
+
+    section {
+      width: 320px;
+      margin: 10px auto;
+      background-color: $secondary-color;
+      padding: 10px;
+
+      h2 {
+        padding: 0;
+        margin: 10px;
+        font-family: $secondary-font;
+      }
+
+      p {
+        margin: 5px;
+        font-family: $main-font;
+      }
+
+      .town-motto {
+        font-style: italic;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  background-color: $dark-accent;
+  color: white;
+
+  p {
+    a {
+      text-decoration: underline;
+      color: white;
+      font-weight: 600;
+    }
+  }
 }

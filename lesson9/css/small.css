@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
 #banner {
-  background-color: #F0CBC5;
+  background-color: #fdcb9e;
   padding: 12px;
   font-size: 1rem;
   font-weight: 600;
@@ -10,7 +10,8 @@
   color: black;
 }
 
-h2, h3 {
+h2,
+h3 {
   text-align: center;
 }
 
@@ -25,7 +26,7 @@ header {
       grid-template-columns: 1fr 3fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  background-color: #dbe2ef;
+  background-color: #ddf3f5;
   max-width: 100%;
   height: 10%;
   -webkit-box-pack: center;
@@ -62,7 +63,7 @@ nav .navigation-menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #112d4e;
+  background-color: #3f3f44;
 }
 
 nav .navigation-menu li {
@@ -84,12 +85,12 @@ nav .navigation-menu li a {
 }
 
 nav .navigation-menu li .active {
-  background-color: #F0CBC5;
+  background-color: #ccceb9;
   color: black;
 }
 
 nav .navigation-menu li a:hover {
-  background-color: #F0CBC5;
+  background-color: #fdcb9e;
   color: black;
 }
 
@@ -105,6 +106,7 @@ main form {
   display: inline-block;
   text-align: left;
   padding: 20px 0;
+  width: 100%;
 }
 
 main form fieldset {
@@ -130,10 +132,21 @@ main form fieldset label {
 
 main form fieldset label input {
   padding: 8px;
+  width: 100%;
+}
+
+main form fieldset label #severity {
+  padding: 0;
+}
+
+main form fieldset label .radio-choice {
+  width: auto !important;
 }
 
 main form fieldset label textarea {
   resize: none;
+  width: 100%;
+  overflow: scroll;
 }
 
 main form #submit-button {
@@ -144,7 +157,7 @@ main form #submit-button {
 }
 
 main form #submit-button:hover {
-  background-color: #112d4e;
+  background-color: #3f3f44;
   color: white;
 }
 
@@ -154,17 +167,25 @@ main .town-cards {
   display: flex;
 }
 
+main .gallery-container div figcaption {
+  padding: 10px;
+}
+
 footer {
   max-width: 800px;
   margin: 0 auto;
   padding: 5px 0;
   text-align: center;
-  background-color: #dbe2ef;
+  background-color: #3f3f44;
+}
+
+footer p {
+  color: white;
 }
 
 footer p a {
   text-decoration: underline;
-  color: #112d4e;
+  color: white;
   font-weight: 600;
 }
 /*# sourceMappingURL=small.css.map */

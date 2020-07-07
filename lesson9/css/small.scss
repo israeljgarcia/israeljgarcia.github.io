@@ -1,175 +1,193 @@
 //imports
-@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap");
 
 //Colors
-$main-color: #f9f7f7;
-$secondary-color: #dbe2ef;
-$bright-accent-color: #F0CBC5;
+$main-color: #f7f7f7;
+$secondary-color: #ddf3f5;
+$bright-accent-color: #fdcb9e;
 $light-accent: #3f72af;
-$dark-accent: #112d4e;
+$dark-accent: #3f3f44;
 
 //Fonts
-$main-font: 'Montserrat', Arial, sans-serif;
-$secondary-font: 'Bitter', 'Times New Roman', Times, serif;
+$main-font: "Montserrat", Arial, sans-serif;
+$secondary-font: "Bitter", "Times New Roman", Times, serif;
 
 #banner {
-    background-color: $bright-accent-color;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: $secondary-font;
-    text-align: center;
-    display: none;
-    color: black;
+  background-color: $bright-accent-color;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: $secondary-font;
+  text-align: center;
+  display: none;
+  color: black;
 }
 
-h2, h3 {
-    text-align: center;
+h2,
+h3 {
+  text-align: center;
 }
 
 body {
-    text-align: center;
+  text-align: center;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto;
-    background-color: $secondary-color;
-    max-width: 100%;
-    height: 10%;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: $secondary-color;
+  max-width: 100%;
+  height: 10%;
+  justify-content: center;
 
-    img {
-        display: inline-block;
-        padding: 1vh;
-        height: 10vh;
-        width: auto;
-        margin: auto 0 auto auto;
-    }
+  img {
+    display: inline-block;
+    padding: 1vh;
+    height: 10vh;
+    width: auto;
+    margin: auto 0 auto auto;
+  }
 
-    h1 {
-        font-family: $secondary-font; 
-        text-align: center;
-        font-size: 4vh;
-    }
+  h1 {
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: 4vh;
+  }
 
-    p {
-        text-align: center;
-        font-size: 1rem;
-        font-style: italic;
-    }
-
+  p {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+  }
 }
 
 nav {
-    margin: 0 auto;
-    max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 
-    .navigation-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        background-color: $dark-accent;
+  .navigation-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $dark-accent;
 
-        li {
-            display: none;
-        }
-
-        li:first-child {
-            display: block;
-        }
-
-        li {
-
-            a {
-                display: block;
-                padding: 0.75rem;
-                text-align: center;
-                text-decoration: none;
-                color: white;
-                font-weight: 700;
-                min-height: 100%;
-            }
-
-            .active {
-                background-color: #F0CBC5;
-                color: black;
-            }    
-
-            a:hover {
-                background-color: $bright-accent-color;
-                color: black;
-            }
-            
-        }
+    li {
+      display: none;
     }
 
-    .responsive li {
+    li:first-child {
+      display: block;
+    }
+
+    li {
+      a {
         display: block;
+        padding: 0.75rem;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        min-height: 100%;
+      }
+
+      .active {
+        background-color: #ccceb9;
+        color: black;
+      }
+
+      a:hover {
+        background-color: $bright-accent-color;
+        color: black;
+      }
     }
+  }
+
+  .responsive li {
+    display: block;
+  }
 }
 
 main {
-    margin: auto;
-    form {
-        display: inline-block;
-        text-align: left;
-        padding: 20px 0;
+  margin: auto;
+  form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px 0;
+    width: 100%;
 
-        fieldset {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 0;
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
 
-            label {
-                margin: 5px 0;
+      label {
+        margin: 5px 0;
 
-                input {
-                    padding: 8px;
-                }
-
-                textarea {
-                    resize: none;
-                }
-            }
+        input {
+          padding: 8px;
+          width: 100%;
         }
 
-        #submit-button {
-            text-align: center;
-            width: 100%;
-            margin: 10px 0;
-            padding: 3px 0;
+        #severity {
+          padding: 0;
         }
 
-        #submit-button:hover {
-            background-color: $dark-accent;
-            color: white;
+        .radio-choice {
+          width: auto !important;
         }
 
+        textarea {
+          resize: none;
+          width: 100%;
+          overflow: scroll;
+        }
+      }
     }
+
+    #submit-button {
+      text-align: center;
+      width: 100%;
+      margin: 10px 0;
+      padding: 3px 0;
+    }
+
+    #submit-button:hover {
+      background-color: $dark-accent;
+      color: white;
+    }
+  }
 }
 
 main {
-    .town-cards {
-        display: flex;
+  .town-cards {
+    display: flex;
+  }
+
+  .gallery-container {
+    div {
+      figcaption {
+        padding: 10px;
+      }
     }
+  }
 }
 
 footer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 5px 0;
-    text-align: center;
-    background-color: $secondary-color;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  background-color: $dark-accent;
 
-    p {
-        a {
-            text-decoration: underline;
-            color: $dark-accent;
-            font-weight: 600;
-        }
+  p {
+    color: white;
+    a {
+      text-decoration: underline;
+      color: white;
+      font-weight: 600;
     }
+  }
 }
