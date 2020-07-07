@@ -180,7 +180,7 @@ main .preston-article #light-festival {
   padding: 2px;
 }
 
-main #load-events {
+main .load-events {
   background-color: #ddf3f5;
   border: 10px solid #3f3f44;
 }

@@ -1,6 +1,8 @@
 const requestUrl = "https://byui-cit230.github.io/weather/data/towndata.json";
 
-let townEvents = "";
+let fishHavenTownEvents = "";
+
+let loadEvents = "";
 
 fetch(requestUrl)
   .then(function (response) {
@@ -13,19 +15,13 @@ fetch(requestUrl)
       if (towns[i].name == "Fish Haven") {
         let theseEvents = towns[i].events;
         theseEvents.forEach((element) => {
-          townEvents += `<p>${element}</p>`;
+          fishHavenTownEvents += `<p>${element}</p>`;
         });
-
-        document.getElementById("load-events").innerHTML += townEvents;
-      } else if (towns[i].name == "Preston") {
-        let theseEvents = towns[i].events;
-        theseEvents.forEach((element) => {
-          townEvents += `<p>${element}</p>`;
-        });
-
-        document.getElementById("load-events").innerHTML += townEvents;
+        loadEvents = fishHavenTownEvents;
       }
     }
+
+    document.getElementById("load-events").innerHTML += loadEvents;
 
     // <h3>Upcoming Events</h3>
     //     <hr />
