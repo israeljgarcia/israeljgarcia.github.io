@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;800&family=PT+Serif:ital@0;1&display=swap");
+$main-color: #aad14f;
+$secondary-color: #64c4d1;
+$accent-color: #ff801e;
+$extra-color: #a4d13b;
+$extra-color2: #a83db1;
+
+$heading-font: "Lobster", Arial, sans serif;
+$main-font: "Open Sans", Arial, sans serif;
+$extra-font: "PT Serif", Times New Roman, serif;
+
+body {
+  background-color: whitesmoke;
+}
+
+.rates {
+  color: $extra-color;
+  position: absolute;
+  right: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $heading-font;
+  margin: 0;
+  color: $accent-color;
+}
+
+p,
+figcaption,
+a {
+  font-family: $main-font;
+}
+
+.company-logo {
+  max-width: 50px;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: $main-color;
+
+    li {
+      display: none;
+    }
+
+    li:first-child,
+    li:nth-child(2) {
+      display: block;
+    }
+
+    // #shift {
+    //   margin-right: auto;
+    //   margin-left: 5px;
+
+    //   font-family: $heading-font;
+    // }
+
+    li {
+      width: 100%;
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 18px 10px;
+      }
+
+      a:hover {
+        background-color: $accent-color;
+      }
+    }
+
+    #shift a {
+      padding: 0;
+    }
+
+    #shift a:hover {
+      background-color: $main-color;
+    }
+  }
+
+  .responsive li {
+    display: block;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+  h1 {
+    font-size: 50px;
+    margin: 0 5px;
+  }
+}
+
+main {
+  text-align: center;
+  #carousel {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #rent-button {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: $accent-color;
+    padding: 5px 0;
+    border: 2px solid black;
+  }
+
+  h2 {
+    margin: 10px 0;
+    font-size: 35px;
+  }
+
+  .rental-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .rental-card {
+      box-shadow: 0 0 10px grey;
+      margin: 20px 5px;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .rental-card:hover {
+      box-shadow: 0 0 20px grey;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      figure {
+        margin: 0;
+        max-width: 400px;
+        position: relative;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: $main-color;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
+}
