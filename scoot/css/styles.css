@@ -665,6 +665,10 @@ main article {
 main article p {
   text-align: left;
 }
+main .contact-info {
+  display: flex;
+  flex-direction: column;
+}
 
 footer {
   text-align: center;
@@ -687,4 +691,52 @@ footer {
   width: 100%;
   height: 2.5rem;
   /* Footer height */
+}
+
+@media (min-width: 400px) {
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #aad14f;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li:nth-child(2) {
+    display: none;
+  }
+  nav ul #shift {
+    margin-right: auto;
+    margin-left: 5px;
+    font-family: "Lobster", Arial, sans serif;
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 18px 10px;
+  }
+  nav ul li .active {
+    background-color: #64c4d1;
+  }
+  nav ul li a:hover {
+    background-color: #ff801e;
+  }
+  nav ul #shift a {
+    padding: 0;
+  }
+  nav ul #shift a:hover {
+    background-color: #aad14f;
+  }
+  nav .responsive li {
+    display: block;
+  }
 }
