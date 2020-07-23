@@ -64,4 +64,17 @@
       justify-content: space-evenly;
     }
   }
+
+  .info {
+    .rental-info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
 }

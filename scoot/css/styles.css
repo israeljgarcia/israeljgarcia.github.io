@@ -741,4 +741,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  .info .rental-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .info .rental-info li {
+    margin: 0 20px;
+  }
 }
