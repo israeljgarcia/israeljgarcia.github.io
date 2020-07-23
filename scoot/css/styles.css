@@ -459,6 +459,7 @@ body {
   color: #a4d13b;
   position: absolute;
   right: 0;
+  font-weight: bold;
 }
 
 h1,
@@ -505,6 +506,9 @@ nav ul li a {
   display: block;
   padding: 18px 10px;
 }
+nav ul li .active {
+  background-color: #64c4d1;
+}
 nav ul li a:hover {
   background-color: #ff801e;
 }
@@ -527,6 +531,51 @@ header {
 header h1 {
   font-size: 50px;
   margin: 0 5px;
+}
+
+#rentals-header {
+  flex-direction: column;
+  text-align: center;
+}
+#rentals-header h1 {
+  margin: 10px;
+}
+#rentals-header a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff801e;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 15px 0;
+}
+
+#tours-header {
+  display: block;
+  margin: 0;
+}
+#tours-header .carousel {
+  position: relative;
+}
+#tours-header .carousel img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#tours-header .carousel a {
+  position: absolute;
+  display: block;
+  padding: 20px 15px;
+}
+#tours-header .carousel a:hover {
+  background-color: rgba(82, 82, 82, 0.8);
+}
+#tours-header .carousel .prev {
+  left: 0;
+  top: 50%;
+}
+#tours-header .carousel .next {
+  right: 0;
+  top: 50%;
 }
 
 main {
@@ -575,6 +624,34 @@ main .rental-cards a figure {
   margin: 0;
   max-width: 400px;
   position: relative;
+}
+main .rental-info {
+  text-align: left;
+  font-family: "Open Sans", Arial, sans serif;
+}
+main .rental-info li {
+  margin: 5px 0;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  font-family: "Open Sans", Arial, sans serif;
+}
+main form input {
+  padding: 10px;
+}
+main form br {
+  margin: 10px;
+}
+main form textarea {
+  resize: none;
+}
+main form button {
+  background-color: #ff801e;
+  border-color: black;
+  padding: 5px 0;
+  cursor: pointer;
 }
 
 footer {

@@ -1,0 +1,75 @@
+{
+  "rentals": [
+    {
+      "id": 0,
+      "name": "Honda Metro Scooter",
+      "max-persons": 1,
+      "resHalfDay": 20,
+      "resFullDay": 30,
+      "half-day": 25,
+      "full-day": 35,
+      "image": "./images/honda-metro-400x300.jpg",
+      "description": "This popular scooter is great for single riders. Amazing fuel economy for the whole day and enough power to have lots of fun! Fits 1."
+    },
+
+    {
+      "id": 1,
+      "name": "Honda Dio Scooter",
+      "max-persons": 2,
+      "resHalfDay": 30,
+      "resFullDay": 40,
+      "half-day": 35,
+      "full-day": 45,
+      "image": "./images/honda-dio-400x300.jpg",
+      "description": "This is another great choice for a two seater scooter. Very economic and fun to use around the city. This is a great choice if you are with a partner. Fits 2."
+    },
+
+    {
+      "id": 2,
+      "name": "Honda PCX150 Scooter",
+      "max-persons": 2,
+      "resHalfDay": 40,
+      "resFullDay": 50,
+      "half-day": 45,
+      "full-day": 55,
+      "image": "./images/beach-scooter-400x300.jpg",
+      "description": "Our Most powerful scooter. Perfect for two people who like going fast in tight spaces. This is a great choice if you want to explore the city. Fits 2."
+    },
+
+    {
+      "id": 3,
+      "name": "Honda Pioneer ATV",
+      "max-persons": 4,
+      "resHalfDay": 50,
+      "resFullDay": 70,
+      "half-day": 60,
+      "full-day": 80,
+      "image": "./images/side-by-side-400x300.jpg",
+      "description": "Our most popular choice for families. You can go anywhere with the Honda Pioneer including the beach, city, and any trail in Cozumel! Fits 4."
+    },
+
+    {
+      "id": 4,
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "max-persons": 5,
+      "resHalfDay": 70,
+      "resFullDay": 100,
+      "half-day": 85,
+      "full-day": 125,
+      "image": "./images/closed-jeep-400x300.jpg",
+      "description": "This is another great option for families, especially with younger kids. It's all the fun of a Pioneer ATV, but with a comfortable air conditioned cabin. Fits 5."
+    },
+
+    {
+      "id": 5,
+      "name": "Jeep Wrangler - 2 door",
+      "max-persons": 4,
+      "resHalfDay": 60,
+      "resFullDay": 85,
+      "half-day": 70,
+      "full-day": 90,
+      "image": "./images/open-jeep-400x300.jpg",
+      "description": "This is a step up from the Pioneer ATV. You get a great outdoors expereience with out open-aired two-door jeep. Fits 4 people. Great choice if you're with a group of friends."
+    }
+  ]
+}

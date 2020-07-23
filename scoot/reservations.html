@@ -7,28 +7,114 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul class="navigation-menu">
-        <li id="shift">
-          <a href="./">
-            <img
-              class="company-logo"
-              src="./images/scoots-logo.png"
-              alt="the scoots company logo"
+    <div id="page-container">
+      <div id="content-wrap">
+        <nav>
+          <ul class="navigation-menu">
+            <li id="shift">
+              <a href="./">
+                <img
+                  class="company-logo"
+                  src="./images/scoots-logo.png"
+                  alt="the scoots company logo"
+                />
+              </a>
+            </li>
+            <li><a class="menu-label" href="#">&#9776; Menu</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="./rentals.html">Rentals</a></li>
+            <li>
+              <a href="./reservations.html" class="active">Reservations</a>
+            </li>
+            <li><a href="./tours.html">Tours</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <header>
+          <h1>Reservations</h1>
+        </header>
+        <main>
+          <p style="text-align: left; margin: 15px;">
+            Before you reserve a scooter/ATV with us, we would like to remind
+            you of a few things. A $50 security deposit is required to confirm
+            reservations. A valid drivers license is required in hand at time of
+            rental. No one under 12 years of age are allowed to ride on the
+            scooters. Fuel charge is not included. Liability insurance is free
+            of charge. Reservations rate requires 24 hour prior notification.
+            Free delivery to Cozumel hotel, Airbnb, or private residence for 2+
+            day rentals. Payment accepted via Google Pay, cash, credit card,
+            debit card, or PayPal. Rentals may be returned to either location.
+          </p>
+          <form action="./form-submit.html">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <br />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="example@example.com"
             />
-          </a>
-        </li>
-        <li><a class="menu-label" href="#">&#9776; Menu</a></li>
-        <li><a href="./">Home</a></li>
-        <li><a href="./rentals.html">Rentals</a></li>
-        <li><a href="./reservations.html">Reservations</a></li>
-        <li><a href="./tours.html">Tours</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+            <br />
+
+            <label for="number">Phone Number</label>
+            <input
+              type="tel"
+              id="number"
+              name="number"
+              placeholder="123-456-7890"
+              required
+            />
+
+            <br />
+
+            <label for="date">Rental Date</label>
+            <input type="date" name="date" id="date" required />
+
+            <br />
+
+            <label for="days-renting">Renting Period</label>
+            <select name="days-renting" id="days-renting" required>
+              <option value="half-day">Half Day</option>
+              <option value="full-day">Full Day</option>
+              <option value="multiple-days">Multi Day</option>
+            </select>
+
+            <br />
+
+            <label for="rental-type">Rental Vehicle</label>
+            <select name="rental-type" id="rental-type" required>
+              <option value="metro">Honda Metro Scooter</option>
+              <option value="dio">Honda Dio Scooter</option>
+              <option value="pcx150">Honda PCX150 Scooter</option>
+              <option value="pioneer">Honda Pioneer ATV</option>
+              <option value="closed-jeep">4 Door Jeep</option>
+              <option value="open-jeep">2 Door Open Jeep</option>
+            </select>
+
+            <br />
+
+            <label for="special-req">Special Requests</label>
+            <textarea name="special-req" id="special-req" rows="10"></textarea>
+
+            <br />
+
+            <button type="submit">Reserve My Scoot!</button>
+            <br />
+          </form>
+        </main>
+      </div>
+
+      <footer id="footer">
+        <p>Israel Garcia | BYUI.edu</p>
+      </footer>
+    </div>
+
     <script src="./js/responsive-navbar.js"></script>
   </body>
 </html>
