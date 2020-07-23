@@ -1,3 +1,6 @@
-@import "_normalize";
-@import "_small";
-@import "_medium";
+@import "normalize";
+@import "small";
+
+@media only screen and (min-width: 600px) {
+  @import "medium";
+}

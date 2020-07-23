@@ -613,7 +613,7 @@ main .rental-cards {
 }
 main .rental-cards .rental-card {
   box-shadow: 0 0 10px grey;
-  margin: 20px 5px;
+  margin: 20px 0;
   padding: 5px;
   border-radius: 5px;
   text-align: left;
@@ -693,7 +693,7 @@ footer {
   /* Footer height */
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   nav ul {
     list-style-type: none;
     display: flex;
@@ -740,7 +740,7 @@ footer {
     display: block;
   }
 
-  main .rental_cards {
+  main .rental-cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
