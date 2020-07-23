@@ -693,7 +693,7 @@ footer {
   /* Footer height */
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   nav ul {
     list-style-type: none;
     display: flex;
