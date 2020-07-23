@@ -247,6 +247,15 @@ main {
       cursor: pointer;
     }
   }
+
+  article {
+    font-size: 18px;
+    margin: 5px;
+
+    p {
+      text-align: left;
+    }
+  }
 }
 
 footer {

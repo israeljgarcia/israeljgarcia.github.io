@@ -25,6 +25,11 @@ body {
   margin: 0;
 }
 
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 /**
    * Add the correct display in IE 9-.
    */
@@ -652,6 +657,13 @@ main form button {
   border-color: black;
   padding: 5px 0;
   cursor: pointer;
+}
+main article {
+  font-size: 18px;
+  margin: 5px;
+}
+main article p {
+  text-align: left;
 }
 
 footer {
