@@ -586,12 +586,8 @@ header h1 {
 main {
   text-align: center;
 }
-main #carousel {
-  display: flex;
-  justify-content: center;
-}
-main #carousel img {
-  width: 100%;
+main img {
+  max-width: 100%;
 }
 main #rent-button {
   display: block;
@@ -738,5 +734,11 @@ footer {
   }
   nav .responsive li {
     display: block;
+  }
+
+  main .rental_cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }

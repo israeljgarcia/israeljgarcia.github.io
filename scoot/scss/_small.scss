@@ -162,13 +162,8 @@ header {
 
 main {
   text-align: center;
-  #carousel {
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 100%;
-    }
+  img {
+    max-width: 100%;
   }
 
   #rent-button {

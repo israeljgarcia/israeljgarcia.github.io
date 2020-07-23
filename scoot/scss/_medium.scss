@@ -56,4 +56,12 @@
       display: block;
     }
   }
+
+  main {
+    .rental_cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
 }
