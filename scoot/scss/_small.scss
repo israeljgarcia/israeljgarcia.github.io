@@ -166,6 +166,11 @@ main {
     max-width: 100%;
   }
 
+  #weather-desc {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
   #rent-button {
     display: block;
     text-decoration: none;

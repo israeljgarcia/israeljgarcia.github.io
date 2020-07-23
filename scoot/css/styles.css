@@ -589,6 +589,10 @@ main {
 main img {
   max-width: 100%;
 }
+main #weather-desc {
+  color: #64c4d1;
+  font-weight: bold;
+}
 main #rent-button {
   display: block;
   text-decoration: none;
